@@ -1,7 +1,8 @@
-import { readFileSync } from 'fs'
 import { join } from 'path'
 
-const input = readFileSync(join(__dirname, './input.txt'), { encoding: 'utf8' })
+import { getInput } from '../helpers'
+
+const input = getInput(join(__dirname, './input.txt'))
 
 const formatedInput =
     input
