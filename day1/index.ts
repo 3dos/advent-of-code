@@ -1,14 +1,16 @@
 import { join } from 'path'
+import { map, pipe, sort, split } from 'ramda'
 
-import { getInput } from '../helpers'
+import { getInput, toInt10 } from '../helpers'
 
 const input = getInput(join(__dirname, './input.txt'))
 
 const formatedInput =
-    input
-        .split('\n')
-        .map(x => parseInt(x, 10))
-        .sort((a, b) => a - b)
+    pipe(
+        split('\n'),
+        map(toInt10),
+        sort((a, b) => a - b)
+    )(input)
 
 // Part 1
 const find2EntriesThatSumTo = (sum: number, list: number[]) => {
