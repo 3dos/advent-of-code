@@ -1,5 +1,5 @@
 import { join } from 'path'
-import { apply, converge, map, multiply, pipe, split } from 'ramda'
+import { converge, map, multiply, pipe, split } from 'ramda'
 
 import { getInput } from '../helpers'
 

@@ -1,5 +1,5 @@
 import { join } from 'path'
-import { lensIndex, pipe, map, over, split, trim, compose, filter } from 'ramda'
+import { compose, filter, lensIndex, map, over, pipe, split, trim } from 'ramda'
 
 import { getInput, toInt10 } from '../helpers'
 
