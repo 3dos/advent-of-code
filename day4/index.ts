@@ -1,17 +1,17 @@
 import { join } from 'path'
-import {
-    and,
-    chain,
-    contains,
-    converge,
-    filter,
-    head,
-    map,
-    mergeAll,
-    pipe,
-    propSatisfies,
-    split
-} from 'ramda'
+import
+    { and
+    , chain
+    , contains
+    , converge
+    , filter
+    , head
+    , map
+    , mergeAll
+    , pipe
+    , propSatisfies
+    , split
+    } from 'ramda'
 
 import { getInput } from '../helpers'
 
